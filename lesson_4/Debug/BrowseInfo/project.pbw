@@ -1,0 +1,114 @@
+[
+  {
+    "ID": "c:main.c@10@macro@GPIO_PORT7_GATE_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORT7_GATE_CLK",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "GPIO_PORT7_GATE_CLK",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@69@macro@GPIOF_PIN_DIR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOF_PIN_DIR",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "GPIOF_PIN_DIR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@122@macro@DIGITAL_FN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIGITAL_FN_REG",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "DIGITAL_FN_REG",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@176@macro@LED_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_REG",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "LED_REG",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@waitFor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void waitFor(int)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "waitFor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@247@F@waitFor@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "7",
+      "line": "8",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "13",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@441@F@main@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\embedded_projects\\lesson_4\\main.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  }
+]

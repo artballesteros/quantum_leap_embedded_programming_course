@@ -1,0 +1,41 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$out
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  deps = gcc
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+    flags = C$:\embedded_projects\lesson_4\main.c -o C$:\embedded_projects\lesson_4\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\arm\inc\c\DLib_Config_Normal.h" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\arm\CMSIS\DSP\Include\\" -D ARM_MATH_CM4 --predef_macros C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.tmp
+    rspfile_name = C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.xcl.rsp
+    xclcommand = -source_file C$:\embedded_projects\lesson_4\main.c -xcl_file C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.xcl -macro_file C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.2\arm\bin\iccarm.exe"
+
+build C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.pbi : INDEXER C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.xcl | C$:\embedded_projects\lesson_4\main.c
+    flags = -out=C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.pbi -f C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.xcl
+
+build C$:\embedded_projects\lesson_4\Debug\BrowseInfo\project.pbw : MAKEBROWSE C$:\embedded_projects\lesson_4\Debug\BrowseInfo\project.pbd
+    flags = C$:\embedded_projects\lesson_4\Debug\BrowseInfo\project.pbd -output C$:\embedded_projects\lesson_4\Debug\BrowseInfo\project.pbw
+
+build C$:\embedded_projects\lesson_4\Debug\BrowseInfo\project.pbd : PDBLINK C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.pbi
+    flags = -M C$:\embedded_projects\lesson_4\Debug\BrowseInfo\project.pbd C$:\embedded_projects\lesson_4\Debug\BrowseInfo\main.pbi
+

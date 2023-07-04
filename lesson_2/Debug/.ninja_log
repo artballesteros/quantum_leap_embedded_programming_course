@@ -1,0 +1,15 @@
+# ninja log v5
+1	406	7100446944986107	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+407	570	7100446946697783	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
+11	60	7100449089620379	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+61	94	7100449089982883	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
+1	50	7100449862681324	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+51	85	7100449863048264	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
+2	186	7100451089064853	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+187	229	7100451089574358	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
+1	53	7100451709997880	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+54	88	7100451710365574	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
+1	134	7100455067694073	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+135	172	7100455068109234	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
+1	159	7100470545559089	C:/embedded_projects/lesson_1/Debug/Obj/main.o	96085ebcd0805529
+160	194	7100470545983182	C:/embedded_projects/lesson_1/Debug/Exe/project.out	c0f02245051d540b
