@@ -1,29 +1,23 @@
-
-#define RCGCGPIO (*((unsigned int *)0x400fe608U)) // clock gating control
-
-#define GPIOF_BASE 0x40025000U
-#define GPIOF_DIR  (*((unsigned int *)(GPIOF_BASE + 0x400U)))
-#define GPIOF_DEN  (*((unsigned int *)(GPIOF_BASE + 0x51CU)))
-#define GPIOF_DATA (*((unsigned int *)(GPIOF_BASE + 0X3FCU)))
+#include "tm4c123gh6pm.h"
 
 void waitFor (int delay) {
-  int counter = 0;
-  while (counter < delay)
-    counter++;
+  int volatile counter = 0; // ensures the compiler doesn't optimize away this wait
+  while (counter < delay)   // by requiring that it always reads counter value from 
+    counter++;              // memory and not some register
 }
 
 int main() {
     
-    RCGCGPIO = 0x20U;
-    GPIOF_DIR = 0x0EU;
-    GPIOF_DEN = 0x0EU;
+    SYSCTL_RCGCGPIO_R = 0x20U;
+    GPIO_PORTF_DIR_R = 0x0EU;
+    GPIO_PORTF_DEN_R = 0x0EU;
     
     int counter = 0;
     /* loop will make board blink with colors forever! */
     while (1) {
-      waitFor(1000000);
-      GPIOF_DATA = (++counter & 0b1110) % 16;
-      waitFor(1000000);
+      waitFor(100000);
+      GPIO_PORTF_DATA_R = (++counter & 0b1110) % 16;
+      waitFor(100000);
     }
 
     return 0;
