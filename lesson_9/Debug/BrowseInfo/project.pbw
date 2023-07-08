@@ -92610,13 +92610,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@37@macro@LED_RED",
+    "ID": "c:main.c@57@macro@LED_RED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_RED",
     "location": {
       "column": "9",
-      "line": "3",
+      "line": "4",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "LED_RED",
@@ -92624,13 +92624,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@66@macro@LED_BLUE",
+    "ID": "c:main.c@86@macro@LED_BLUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_BLUE",
     "location": {
       "column": "9",
-      "line": "4",
+      "line": "5",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "LED_BLUE",
@@ -92638,13 +92638,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@95@macro@LED_GREEN",
+    "ID": "c:main.c@115@macro@LED_GREEN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_GREEN",
     "location": {
       "column": "9",
-      "line": "5",
+      "line": "6",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "LED_GREEN",
@@ -92652,13 +92652,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@124@macro@LED_RESET",
+    "ID": "c:main.c@144@macro@LED_RESET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_RESET",
     "location": {
       "column": "9",
-      "line": "6",
+      "line": "7",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "LED_RESET",
@@ -92672,38 +92672,10 @@
     "display": "void waitFor(int)",
     "location": {
       "column": "6",
-      "line": "8",
+      "line": "9",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "waitFor",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@waitFor",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void waitFor(int)",
-    "location": {
-      "column": "6",
-      "line": "10",
-      "path": "C:\\embedded_projects\\lesson_9\\main.c"
-    },
-    "name": "waitFor",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@196@F@waitFor@counter",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "counter",
-    "location": {
-      "column": "16",
-      "line": "11",
-      "path": "C:\\embedded_projects\\lesson_9\\main.c"
-    },
-    "name": "counter",
     "origin": "project_file",
     "scope": null
   },
@@ -92714,7 +92686,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "16",
+      "line": "11",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "main",
@@ -92722,13 +92694,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1125@F@main@counter",
+    "ID": "c:main.c@881@F@main@counter",
     "What": "Variable",
     "defdec": "Def",
     "display": "counter",
     "location": {
       "column": "9",
-      "line": "30",
+      "line": "25",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "counter",
@@ -92736,17 +92708,45 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2494@F@main@LED_VALUE",
+    "ID": "c:main.c@2250@F@main@LED_VALUE",
     "What": "Variable",
     "defdec": "Def",
     "display": "LED_VALUE",
     "location": {
       "column": "11",
-      "line": "60",
+      "line": "55",
       "path": "C:\\embedded_projects\\lesson_9\\main.c"
     },
     "name": "LED_VALUE",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:delay.h@31@macro@___DELAY_H___",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "___DELAY_H___",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\embedded_projects\\lesson_9\\delay.h"
+    },
+    "name": "___DELAY_H___",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@waitFor",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void waitFor(int)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "C:\\embedded_projects\\lesson_9\\delay.h"
+    },
+    "name": "waitFor",
+    "origin": "user_include",
     "scope": null
   }
 ]

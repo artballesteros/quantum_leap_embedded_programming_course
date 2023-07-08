@@ -1,4 +1,5 @@
 #include "tm4c123gh6pm.h"
+#include "delay.h"
 
 #define LED_RED   (1U << 1)
 #define LED_BLUE  (1U << 2)
@@ -6,12 +7,6 @@
 #define LED_RESET 0
 
 void waitFor(int delay);
-
-void waitFor(int delay) {
-  int volatile counter = 0; // ensures the compiler doesn't optimize away this wait
-  while (counter < delay)   // by requiring that it always reads counter value from 
-    counter++;              // memory and not some register
-}
 
 int main() {
   
