@@ -6,7 +6,7 @@
 #define LED_GREEN (1U << 3)
 #define LED_RESET 0
 
-void waitFor(int delay);
+unsigned int factorial(unsigned int val);
 
 int main() {
   
@@ -15,6 +15,7 @@ int main() {
        Make sure that the registers have read/write permission otherwise you 
        wouldn't be able to do this. You can find out by reading the data sheets.
     */
+    /* factorial(5U); causes stack overflow :) will eventually create my own bus fault exception handler */
     
     SYSCTL_RCGCGPIO_R  |= (1U << 5); /* enable clock for GPIO port F */
     SYSCTL_GPIOHBCTL_R |= (1U << 5); /* enable use of Advance High Performance Bus (AHB) to GPIOF, default (APB) is slower */
@@ -60,4 +61,14 @@ int main() {
     }
 
     return 0;
+}
+
+unsigned int factorial(unsigned int val) {
+    /* added to cause stack overflow faster */
+    unsigned int array[100];
+    array[val] = val;
+    
+    if (val == 0U)
+      return val;
+    return array[val] * factorial(val - 1U);
 }
