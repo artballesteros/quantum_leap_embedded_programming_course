@@ -5,7 +5,9 @@
 #define LED_GREEN (1U << 3)
 #define LED_RESET 0
 
-void waitFor (int delay) {
+void waitFor(int delay);
+
+void waitFor(int delay) {
   int volatile counter = 0; // ensures the compiler doesn't optimize away this wait
   while (counter < delay)   // by requiring that it always reads counter value from 
     counter++;              // memory and not some register
