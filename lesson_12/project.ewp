@@ -1100,6 +1100,6 @@
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\tm4c123gh6pm.h</name>
+        <name>$PROJ_DIR$\tm4c_cmsis.h</name>
     </file>
 </project>

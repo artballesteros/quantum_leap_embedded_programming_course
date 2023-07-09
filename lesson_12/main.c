@@ -1,4 +1,4 @@
-#include "tm4c123gh6pm.h"
+#include "tm4c_cmsis.h"
 #include "delay.h"
 
 #define LED_RED   (1U << 1)
@@ -22,11 +22,11 @@ int main() {
                       pop them because factorial always branch links to an address before main. Consequently, we slowly increase the 
                       stack until we run out of stack memory, causing a bus fault exception once PC is below 0x20000000. Pretty cool */
     
-    SYSCTL_RCGCGPIO_R  |= (1U << 5); /* enable clock for GPIO port F */
-    SYSCTL_GPIOHBCTL_R |= (1U << 5); /* enable use of Advance High Performance Bus (AHB) to GPIOF, default (APB) is slower */
+    SYSCTL->RCGC2 |= (1U << 5); /* enable clock for GPIO port F */
+    SYSCTL->GPIOHSCTL |= (1U << 5); /* enable use of Advance High Performance Bus (AHB) to GPIOF, default (APB) is slower */
     
-    GPIO_PORTF_AHB_DIR_R |= (LED_RED | LED_BLUE | LED_GREEN);
-    GPIO_PORTF_AHB_DEN_R |= (LED_RED | LED_BLUE | LED_GREEN);
+    GPIOF_HS->DIR |= (LED_RED | LED_BLUE | LED_GREEN);
+    GPIOF_HS->DEN |= (LED_RED | LED_BLUE | LED_GREEN);
     
     int counter = 0;
     /* loop will make board blink with colors forever! */
@@ -59,9 +59,9 @@ int main() {
       */
 
       int LED_VALUE = ++counter & 0b1110;
-      GPIO_PORTF_AHB_DATA_BITS_R[LED_VALUE] = LED_VALUE;
+      GPIOF_HS->DATA_Bits[LED_VALUE] = LED_VALUE;
       waitFor(100000);
-      GPIO_PORTF_AHB_DATA_BITS_R[LED_VALUE] = LED_RESET;
+      GPIOF_HS->DATA_Bits[LED_VALUE] = LED_RESET;
       waitFor(100000);
     }
 
