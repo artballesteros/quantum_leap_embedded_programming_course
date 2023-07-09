@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<settings>
+    <PlDriver>
+        <FirstRun>0</FirstRun>
+        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\config\debugger\TexasInstruments\LM4F120H5QR.ddf</MemConfigValue>
+    </PlDriver>
+    <PlDdfRanges>
+        <ConfigRanges0>Memory Periph1 1073741824 8192 2</ConfigRanges0>
+        <ConfigRanges1>Memory Periph2 1073758208 65536 2</ConfigRanges1>
+        <ConfigRanges2>Memory Periph3 1073872896 24576 2</ConfigRanges2>
+        <ConfigRanges3>Memory Periph4 1073938432 40960 2</ConfigRanges3>
+        <ConfigRanges4>Memory Periph5 1073987584 4096 2</ConfigRanges4>
+        <ConfigRanges5>Memory Periph6 1074003968 4096 2</ConfigRanges5>
+        <ConfigRanges6>Memory Periph7 1074053120 20480 2</ConfigRanges6>
+        <ConfigRanges7>Memory Periph8 1074102272 24576 2</ConfigRanges7>
+        <ConfigRanges8>Memory Periph9 1074458624 4096 2</ConfigRanges8>
+        <ConfigRanges9>Memory Periph10 1074761728 4096 2</ConfigRanges9>
+        <ConfigRanges10>Memory Periph11 1074774016 16384 2</ConfigRanges10>
+        <ConfigRanges11>Memory Periph_BitBand 1107296256 33554432 2</ConfigRanges11>
+        <ConfigRanges12>Memory ROM 16777216 520093696 1</ConfigRanges12>
+        <ConfigRanges13>Memory SystemSFR 3758096384 1048576 2</ConfigRanges13>
+        <ConfigRanges14>Memory Flash 0 262144 1</ConfigRanges14>
+        <ConfigRanges15>Memory RAM 536870912 32768 0</ConfigRanges15>
+        <ConfigRanges16>Memory RAM_BitBand 570425344 1048576 0</ConfigRanges16>
+    </PlDdfRanges>
+    <PlCacheRanges>
+        <CustomRanges0>0 0 262144 1 0</CustomRanges0>
+        <CustomRangesText0 />
+        <CustomRanges1>0 16777216 520093696 1 0</CustomRanges1>
+        <CustomRangesText1 />
+        <CustomRanges2>0 536870912 32768 0 0</CustomRanges2>
+        <CustomRangesText2 />
+        <CustomRanges3>0 570425344 1048576 0 0</CustomRanges3>
+        <CustomRangesText3 />
+        <CustomRanges4>0 1073741824 8192 2 0</CustomRanges4>
+        <CustomRangesText4 />
+        <CustomRanges5>0 1073758208 65536 2 0</CustomRanges5>
+        <CustomRangesText5 />
+        <CustomRanges6>0 1073872896 24576 2 0</CustomRanges6>
+        <CustomRangesText6 />
+        <CustomRanges7>0 1073938432 40960 2 0</CustomRanges7>
+        <CustomRangesText7 />
+        <CustomRanges8>0 1073987584 4096 2 0</CustomRanges8>
+        <CustomRangesText8 />
+        <CustomRanges9>0 1074003968 4096 2 0</CustomRanges9>
+        <CustomRangesText9 />
+        <CustomRanges10>0 1074053120 20480 2 0</CustomRanges10>
+        <CustomRangesText10 />
+        <CustomRanges11>0 1074102272 24576 2 0</CustomRanges11>
+        <CustomRangesText11 />
+        <CustomRanges12>0 1074458624 4096 2 0</CustomRanges12>
+        <CustomRangesText12 />
+        <CustomRanges13>0 1074761728 4096 2 0</CustomRanges13>
+        <CustomRangesText13 />
+        <CustomRanges14>0 1074774016 16384 2 0</CustomRanges14>
+        <CustomRangesText14 />
+        <CustomRanges15>0 1107296256 33554432 2 0</CustomRanges15>
+        <CustomRangesText15 />
+        <CustomRanges16>0 3758096384 1048576 2 0</CustomRanges16>
+        <CustomRangesText16 />
+    </PlCacheRanges>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <ArmDriver>
+        <EnableCache>0</EnableCache>
+        <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
+    </ArmDriver>
+    <LmiFtdiDriver>
+        <LMIFTDIserialNo>0E231BB7</LMIFTDIserialNo>
+        <LMIFTDIfoundProbes />
+        <LmiFtdiResetStyle>0</LmiFtdiResetStyle>
+        <LmiFtdiResetStrategy>0</LmiFtdiResetStrategy>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
+    </LmiFtdiDriver>
+    <DebugChecksum>
+        <Checksum>3309068481</Checksum>
+    </DebugChecksum>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Trace2>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+    </Trace2>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "{$PROJ_DIR$\main.c}.80.7" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints2>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+</settings>
