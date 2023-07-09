@@ -16,6 +16,11 @@ int main() {
        wouldn't be able to do this. You can find out by reading the data sheets.
     */
     /* factorial(5U); causes stack overflow :) will eventually create my own bus fault exception handler */
+    /* factorial(7U); causes stack overflow because of array out of bounds access to link register changing return address to 
+                      some function in the interrupt vector table. Since main is not a leaf function (it calls other functions)
+                      we push some registers ,{r4 - r7, LR} if I think, onto the stack for later popping. But we never
+                      pop them because factorial always branch links to an address before main. Consequently, we slowly increase the 
+                      stack until we run out of stack memory, causing a bus fault exception once PC is below 0x20000000. Pretty cool */
     
     SYSCTL_RCGCGPIO_R  |= (1U << 5); /* enable clock for GPIO port F */
     SYSCTL_GPIOHBCTL_R |= (1U << 5); /* enable use of Advance High Performance Bus (AHB) to GPIOF, default (APB) is slower */
@@ -65,7 +70,7 @@ int main() {
 
 unsigned int factorial(unsigned int val) {
     /* added to cause stack overflow faster */
-    unsigned int array[100];
+    unsigned int array[6];
     array[val] = val;
     
     if (val == 0U)

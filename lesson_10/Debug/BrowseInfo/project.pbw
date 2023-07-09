@@ -92764,13 +92764,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1007@F@main@counter",
+    "ID": "c:main.c@1656@F@main@counter",
     "What": "Variable",
     "defdec": "Def",
     "display": "counter",
     "location": {
       "column": "9",
-      "line": "26",
+      "line": "31",
       "path": "C:\\embedded_projects\\lesson_10\\main.c"
     },
     "name": "counter",
@@ -92778,13 +92778,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2376@F@main@LED_VALUE",
+    "ID": "c:main.c@3025@F@main@LED_VALUE",
     "What": "Variable",
     "defdec": "Def",
     "display": "LED_VALUE",
     "location": {
       "column": "11",
-      "line": "56",
+      "line": "61",
       "path": "C:\\embedded_projects\\lesson_10\\main.c"
     },
     "name": "LED_VALUE",
@@ -92798,7 +92798,7 @@
     "display": "unsigned int factorial(unsigned int)",
     "location": {
       "column": "14",
-      "line": "66",
+      "line": "71",
       "path": "C:\\embedded_projects\\lesson_10\\main.c"
     },
     "name": "factorial",
@@ -92806,13 +92806,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2702@F@factorial@array",
+    "ID": "c:main.c@3351@F@factorial@array",
     "What": "Variable",
     "defdec": "Def",
     "display": "array",
     "location": {
       "column": "18",
-      "line": "68",
+      "line": "73",
       "path": "C:\\embedded_projects\\lesson_10\\main.c"
     },
     "name": "array",
