@@ -1,4 +1,4 @@
 C:\embedded_projects\lesson_10\Debug\BrowseInfo\main.pbi: \
-  C:\embedded_projects\lesson_10\delay.h \
-  C:\embedded_projects\lesson_10\tm4c123gh6pm.h \
-  C:\embedded_projects\lesson_10\main.c
+  C:\embedded_projects\lesson_11\main.c \
+  C:\embedded_projects\lesson_11\tm4c123gh6pm.h \
+  C:\embedded_projects\lesson_11\delay.h
