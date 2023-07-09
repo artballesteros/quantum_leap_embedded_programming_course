@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BuildDb />
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>C:\embedded_projects\lesson_13\Debug\Exe\c.out</Path>
+            <Output>
+                <Path>C:\embedded_projects\lesson_13\Debug\List\c.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

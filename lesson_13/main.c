@@ -8,8 +8,25 @@
 
 unsigned int factorial(unsigned int val);
 
+typedef struct {
+  uint8_t x;
+  uint8_t y;
+  uint16_t mag;
+} vector;
+
+typedef struct {
+  vector a;
+  vector b;
+  vector c;
+  vector d;
+} quad_polygon;
+
+uint32_t volatile const data_num1 = 0;
+uint32_t volatile const data_num2 = 0;
+
 int main() {
-  
+    uint32_t volatile bss_num1;
+    uint32_t volatile bss_num2;
     /* bitwise assignment is a useful idiom with changing register values.
        It allows one to keep old register values intact without overwriting them.
        Make sure that the registers have read/write permission otherwise you 
